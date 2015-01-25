@@ -1,0 +1,49 @@
+---
+title: "CodeBook"
+author: "Torbjörn"
+date: "Sunday, January 25, 2015"
+output: html_document
+---
+ DATA DICTIONARY - Body acceleration and gyro means
+
+SubjectId
+      Subject, or person, that performs an activity
+      No: 0 - 30
+
+Activity
+      Activity performed by the subject.
+      1 - WALKING
+      2 - WALKING_UPSTAIRS
+      3 - WALKING_DOWNSTAIRS
+      4 - SITTING
+      5 - STANDING          
+      6 - LAYING
+
+BodyAccJerkMean : 
+      The calculated mean from all different activities performed by each subject from the mean of
+      all body linear acceleration to obtain Jerk signals. 
+      Using column 556 angle(tBodyAccJerkMean),gravityMean) from the source dataset.
+      No: 30 * 6
+      Unit: standard gravity units 'g'
+
+BodyGyroMean : 
+      The calculated mean from all different activities performed by each subject from the mean of 
+      all angular velocity vector measured by the gyroscope. 
+      Using column 557 angle(tBodyGyroMean,gravityMean) from the source dataset.
+      No: 30 * 6
+      Unit: radians/second
+      
+
+BodyGyroJerkMean :
+      The calculated mean from all different activities performed by each subject from the means of 
+      all body linear acceleration and angular velocity were derived in time to obtain Jerk signals. 
+      Using column 558 angle(tBodyGyroJerkMean,gravityMean) from the source dataset.
+      No: 30 * 6
+      Unit: radians/second
+
+
+Note:
+Data source:
+URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+See further information: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+For deper understanding of the source data see further in the ReadMe document provided.
